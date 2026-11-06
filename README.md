@@ -6,7 +6,8 @@ NYU Depth V2 at 2x, 4x, and 8x upsampling.
 
 ## Setup
 
-Put `nyu_depth_v2_labeled.mat` in `data/raw/`, then install dependencies:
+Keep `nyu_depth_v2_labeled.mat` outside OneDrive (for example,
+`C:\data\nyu_depth_v2_labeled.mat`), then install dependencies:
 
 ```bash
 python -m venv .venv
@@ -16,10 +17,10 @@ pip install -r requirements.txt
 
 ## Run
 
-Prepare an evenly spaced subset of up to 500 frames, resized to 240x320:
+Prepare an evenly spaced subset of 500 frames, resized to 240x320:
 
 ```powershell
-python ps4.py prepare
+python ps4.py prepare --mat C:\data\nyu_depth_v2_labeled.mat --samples 500
 ```
 
 Train both networks for a time budget per model (default: 10 minutes):
