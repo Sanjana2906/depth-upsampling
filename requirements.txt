@@ -1,0 +1,6 @@
+numpy
+opencv-contrib-python
+h5py
+torch
+scikit-image
+matplotlib
