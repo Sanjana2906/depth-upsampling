@@ -5,7 +5,6 @@ from __future__ import annotations
 import argparse
 import csv
 import math
-import platform
 import random
 import sys
 import time
@@ -939,7 +938,6 @@ def _parser() -> argparse.ArgumentParser:
     figures.add_argument(
         "--dataset", type=Path, default=ROOT / "data" / "processed" / "nyu_subset.npz"
     )
-    figures.add_argument("--seed", type=int, default=42)
     figures.add_argument("--device", choices=("auto", "cpu", "cuda"), default="auto")
     return parser
 
