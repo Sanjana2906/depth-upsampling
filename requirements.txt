@@ -1,6 +1,9 @@
-numpy
-opencv-contrib-python
-h5py
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch
+numpy
+pandas
+opencv-contrib-python-headless
+h5py
 scikit-image
 matplotlib
+streamlit>=1.40
